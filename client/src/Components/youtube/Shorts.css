@@ -1,0 +1,227 @@
+
+.video {
+  position: relative; 
+  width: 313px;
+  height: 89vh; 
+  overflow: hidden; 
+  scroll-snap-align: start;
+  border-radius: 26px;
+  box-shadow: 0px 0px 5px 0px rgb(2, 1, 1);
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  margin-left: 15%;
+  z-index: 10; 
+}
+.logos {
+  position: absolute; 
+   top:-6%;
+  left: 0; 
+   width: 100%; 
+  height: 400px; 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  z-index: 0; 
+}
+
+
+
+.shorti {
+  position: relative;
+}
+
+.navigationButtons {
+  position: fixed;
+  left: 480px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.navButton {
+  background-color: grey; 
+  border: none; 
+  border-radius: 50%; 
+  width: 35px; 
+  height: 35px; 
+  display: flex;
+  align-items: center;
+  
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  cursor: pointer; 
+}
+
+.navButton:hover {
+  background-color: #d62626;
+}
+
+.video {
+}
+
+
+
+.shorti {
+ background-color: black;
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw; 
+  margin: 0; 
+  padding: 0; 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+}
+
+
+
+iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+.shot{
+   
+  font-family: "Oswald", sans-serif;;
+  font-weight: 900;
+  font-weight: 900;
+font-size: 900%;
+margin-left: 90%;
+margin-bottom: -40%;
+  z-index: -122;
+  color: transparent;
+  -webkit-text-stroke: 1.4px rgb(254, 245, 245);
+ 
+  
+}
+.shortsVideoTop {
+  position: fixed;
+  top: 72px;
+  right: -485px;
+  width: 100%; 
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0px; 
+  z-index: 1000;
+}
+
+.shortsVideoTopIcon {
+  display: flex;
+}
+
+.shortsVideoTopIcon > .MuiSvgIcon-root {
+  font-size: 50px;
+  padding: 10px;
+}
+
+.shortsVideoSideIcons {
+  position: fixed; 
+  right:485px; 
+  bottom: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 600;
+  z-index: 1000; 
+}
+
+.shortsVideoSideIcon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.shortsVideoSideIcon > p {
+  color: rgb(250, 248, 248);
+  margin: 5px 0; 
+}
+
+.shortsVideoSideIcon > .MuiSvgIcon-root {
+  font-size: 50px;
+  padding: 10px;
+}
+
+.shortsBottom {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  bottom: 10px;
+  width: 100%; 
+}
+
+.shortsDesc {
+  display: flex;
+  padding: 10px;
+}
+
+.shortsDesc > p {
+  color: white;
+}
+
+.MuiSvgIcon-root {
+  cursor: pointer;
+  color: white; 
+}
+
+.shortDetails {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.shortDetails > p {
+  margin-left: 10px;
+  margin-right: 20px;
+  color: white;
+  font-weight: 500;
+  border-radius: 50px;
+}
+
+.shortDetails > button {
+  padding: 7px;
+  background-color: rgba(177, 177, 177, 0.609);
+  border: none;
+  outline: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.shortDetails > button:hover {
+  background-color: rgb(255, 0, 0);
+}
+
+.shortsVideoSideIcon > .MuiSvgIcon-root:hover {
+  color: rgb(203, 15, 15);
+}
+
+.shortsDesc > .ticker {
+  height: fit-content;
+  width: 100%;
+  max-width: 250px;
+}
+
+.description {
+  color: white;
+}
+
+.shortsVideoSideIcon > .MuiSvgIcon-root:last-child {
+  animation: spinTheRecord infinite 5s linear;
+  font-size: 32px;column-width: auto;
+}
+
+@keyframes spinTheRecord {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

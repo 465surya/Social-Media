@@ -1,0 +1,434 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.marke{
+    background-image: url("./fafa.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Muli', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    color: white; /* Assuming you want the text color to contrast with the image */
+}
+.text-container {
+
+  position: fixed; /* Fixes the position relative to the viewport */
+  top: 0; /* Aligns to the top of the page */
+  left: 0; /* Aligns to the left edge of the page */
+  width: 100%; /* Ensures the container spans the full width of the viewport */
+  background: transparent; /* Sets a background color to make the text readable */
+  padding: 10px; /* Adds some padding around the text */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for better visibility */
+/* Ensures it stays above other elements */
+  text-align: center; /* Centers the text horizontally */
+  /* Ensure no flex properties are affecting this */
+  display: block; /* Ensure it uses block layout, not affected by flex */
+}
+/* Main title */
+.mp {
+  font-family: "Jost", sans-serif;
+  font-size: 100px;
+  font-weight: 900;
+  color: red;
+  position: absolute; /* Allows precise positioning */
+  left: 25%; /* Adjust as needed */
+  top: -10px; /* Ensure it stays at the top */
+  margin: 0; /* Reset margin to prevent shifting */
+}
+
+/* Sub-title */
+.ma {
+  font-family: sans-serif;
+  font-size: 110px;
+  font-weight: 900;
+  color: transparent;
+  -webkit-text-stroke: 1px grey;
+  position: absolute; /* Allows precise positioning */
+  left: 56%; /* Adjust as needed */
+  top: 34px; /* Position below the main title */
+  margin: 0; /* Reset margin to prevent shifting */
+}
+.grid-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 140px auto 0; /* Adjust the top margin as needed */
+}
+
+
+.car-container {
+ padding-top: 0px;
+    max-width: 100%;
+    margin: 0; /* Adjust the top margin to move it down */
+    display: flex;
+    z-index: 1000;
+    flex-wrap: wrap; /* Allows wrapping for multiple cards */
+    justify-content: center; /* Center cards horizontally */
+}
+
+.car-specs {
+    margin-left: 60%;
+    margin-top: -180px;
+    font-size: 13px;
+    font-weight: 400;
+    color: #bcbbbb;
+    line-height: 1.6;
+    text-align: justify; /* Align text to the right */
+}
+
+.car {
+    background-image: linear-gradient(35deg, #ffffff, #0a0a0a);
+    border-radius: 10px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    display: flex; /* Use flexbox for horizontal layout */
+    max-width: 700px;
+    margin: 20px;
+    overflow: hidden;
+    width: 100%; /* Ensure the card fits within its container */
+}
+.box{
+    position: relative;
+    top: -65px;
+}
+
+.car-preview {
+    background-image: linear-gradient(50deg, #efecec, #919090);
+    color: #fff;
+    padding: 20px;
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    max-width: 250px; /* Adjust as needed */
+    height: 240px; /* Adjust as needed */
+}
+
+.car-image {
+    
+    width: 120%; /* Make the image take up the full width of the container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: add rounded corners */
+    object-fit: cover;
+    z-index: 15; /* Ensure the image covers the container */
+}
+
+.car-info {
+    /* padding: 20px;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    /* justify-content: space-between;  */
+    /* width: 100%;  */
+    display: flex;
+    flex-direction: column;
+   justify-content: space-between;
+   width: 100%;padding: 20px;
+}
+
+.car-info h2 {
+    letter-spacing: 1px;
+    margin: 10px 0;
+}
+
+.car-info h4 {
+     font-family: "Jost", sans-serif;
+    color: rgb(148, 20, 20);
+    margin: 5px 0;
+    font-weight: 900;
+    font-size: 180%;
+    /* top:23; */
+}
+
+.car-info p {
+
+    color: #0d0b0b;
+    margin: 5px 0;
+}
+
+
+.post-ratings-container {
+	display: flex;
+	justify-content: end;
+	padding: 12px 0;
+    margin-top: -10%;
+}
+
+.post-rating {
+	display: flex;
+	align-items: center;
+	cursor: default;
+}
+
+.post-rating:not(:last-child) {
+	margin-right: 12px;
+}
+
+.post-rating-selected > .post-rating-button,
+.post-rating-selected > .post-rating-count {
+	color: #009578;
+}
+
+.post-rating-button {
+	margin-right: 6px;
+	cursor: pointer;
+	color: #020202;
+}
+
+.post-rating:not(.post-rating-selected) > .post-rating-button:hover {
+	color: #000000;
+}
+
+/* Social panel styles */
+.social-panel {
+    position: fixed;
+    right: 10px;
+    top: 55%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  background-image: url("./raki.jpg");
+    border-radius: 16px;
+      border: 2px solid black;
+  
+    padding: 15px;
+    z-index: 999;
+     background-size: cover; /* Adjusts the size of the background image */
+    background-position: center;
+    opacity: 0.8;
+    
+}
+
+
+.social-panel h4 {
+    margin: 10px 0;
+    
+    color: rgb(241, 240, 240);
+    font-family: 'Muli';
+    font-size: 10px;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+
+.social-panel ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.social-panel ul li {
+    margin: 18px 0;
+ 
+}
+
+.social-panel ul li a {
+    border: 30px solid transparent;
+    border-radius: 50%;
+    color: #9b000d;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    text-decoration: none;
+    top: 0;
+    background-color: #0000009d;
+}
+
+.social-panel ul li a:hover {
+    border-color: rgb(197, 192, 192);
+    box-shadow: 0 9px 12px -9px rgb(230, 26, 26);
+}
+
+.floating-btn {
+    border-radius: 26.5px;
+    background-color: #001F61;
+    border: 1px solid #001F61;
+    box-shadow: 0 16px 22px -17px #03153B;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 12px 20px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+}
+
+/* ... other styles ... */
+
+.floating-text {
+    background-color: black;
+    border-radius: 9px 9px 0 0;
+    color: #fff;
+    font-family: 'Muli', sans-serif;
+    padding: 3px 15px;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 998;
+    opacity: 0; /* Initially hidden */
+    animation: slideUp 0.8s ease-in-out forwards; /* Add slide-up animation */
+    z-index: 100000;
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateX(-50%) translateY(100%); /* Start below the viewport */
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(-50%) translateY(0); /* End at its final position */
+        opacity: 1;
+    }
+}
+
+.floating-text a {
+    color: #f3f3f3;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out, text-decoration 0.3s ease-in-out;
+}
+
+.floating-text a:hover {
+    color: #e71818;
+    text-decoration: wavy;
+}
+
+
+.car-preview .car-image{
+    opacity: 1;
+    transition: all 0.5s ;
+    
+}
+.car-preview:hover .car-image{
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+@media screen and (max-width: 1024px) {
+    .car {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .car-preview {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .car-info {
+        padding: 15px;
+    }
+
+    .car-specs {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .car {
+        max-width: 100%;
+    }
+
+    .car-preview {
+        height: 200px;
+    }
+
+    .car-info {
+        padding: 10px;
+    }
+
+    .car-info h2 {
+        font-size: 18px;
+    }
+
+    .car-info h4 {
+        font-size: 16px;
+    }
+
+    .car-info p {
+        font-size: 14px;
+    }
+
+    .car-info .btn {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .car {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .car-preview {
+        max-width: 100%;
+        height: 150px;
+    }
+
+    .car-info {
+        padding: 10px;
+    }
+
+    .car-info h2 {
+        font-size: 16px;
+    }
+
+    .car-info h4 {
+        font-size: 14px;
+    }
+
+    .car-info p {
+        font-size: 12px;
+    }
+
+    .car-info .btn {
+        font-size: 12px;
+        padding: 8px 15px;
+    }
+
+    .social-panel {
+        width: auto;
+        padding: 10px;
+    }
+
+    .floating-btn {
+        right: 10px;
+    }
+
+    .floating-text {
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+}
+.car-title{
+    font-family: "Jost", sans-serif;
+  font-size: 40px;
+  font-weight: 900;
+position: relative;
+left: -65%;
+z-index: 1;
+  color: #000000;
+}

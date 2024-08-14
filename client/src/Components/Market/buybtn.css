@@ -1,0 +1,175 @@
+.car-info .btn {
+  border: none;
+   font-family: "Jost", sans-serif;
+  width: 160px;
+  font-weight: 700;
+  height: 50px;
+  color: #0b0404;
+  z-index: 1;
+  display: flex;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.car-info .btn p {
+  margin: 0 auto;
+  align-self: center;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.car-info .btn::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  z-index: -1;
+  height: 10%;
+  margin-left: -6px;
+  border-radius: 10px; 
+  bottom:1px;
+  clip-path: polygon(
+    0% 74%,
+    4% 75%,
+    8% 76%,
+    11% 77%,
+    15% 78%,
+    20% 78%,
+    25% 77%,
+    32% 77%,
+    37% 75%,
+    40% 74%,
+    43% 74%,
+    46% 73%,
+    52% 72%,
+    57% 72%,
+    65% 74%,
+    66% 75%,
+    71% 78%,
+    75% 82%,
+    81% 86%,
+    83% 88%,
+    88% 91%,
+    90% 94%,
+    94% 96%,
+    98% 98%,
+    100% 100%,
+    82% 100%,
+    0 100%
+  );
+  background:  rgb(148, 20, 20);
+  transition: 0.2s ease;
+}
+
+.car-info .btn::before {
+  top: 1%;
+  position: absolute;
+  content: "";
+  /*   bottom: 80%; */
+  transform: rotate(180deg);
+  width: 100%;
+  height: 10%;
+  transition: 0.2s ease;
+   border-radius: 10px;
+  z-index: -1;
+  margin-left: -4%;
+  clip-path: polygon(
+    0% 74%,
+    4% 75%,
+    8% 76%,
+    11% 77%,
+    15% 78%,
+    20% 78%,
+    25% 77%,
+    32% 77%,
+    37% 75%,
+    40% 74%,
+    43% 74%,
+    46% 73%,
+    52% 72%,
+    57% 72%,
+    65% 74%,
+    66% 75%,
+    71% 78%,
+    75% 82%,
+    81% 86%,
+    83% 88%,
+    88% 91%,
+    90% 94%,
+    94% 96%,
+    98% 98%,
+    100% 100%,
+    82% 100%,
+    0 100%
+  );
+  background: black;
+}
+
+.car-info .btn:hover::after {
+  clip-path: polygon(
+    0 30%,
+    9% 34%,
+    7% 39%,
+    11% 43%,
+    13% 33%,
+    17% 30%,
+    24% 34%,
+    25% 35%,
+    30% 31%,
+    30% 38%,
+    39% 33%,
+    35% 43%,
+    43% 45%,
+    55% 46%,
+    65% 74%,
+    67% 66%,
+    81% 57%,
+    75% 82%,
+    81% 86%,
+    83% 88%,
+    88% 91%,
+    90% 94%,
+    94% 96%,
+    98% 98%,
+    100% 100%,
+    82% 100%,
+    0 100%
+  );
+  height: 80%;
+}
+
+.car-info .btn:hover::before {
+ clip-path: polygon(
+    0 30%,
+    9% 34%,
+    7% 39%,
+    11% 43%,
+    13% 33%,
+    17% 30%,
+    24% 34%,
+    25% 35%,
+    30% 31%,
+    30% 38%,
+    39% 33%,
+    35% 43%,
+    43% 45%,
+    55% 46%,
+    65% 74%,
+    67% 66%,
+    81% 57%,
+    75% 82%,
+    81% 86%,
+    83% 88%,
+    88% 91%,
+    90% 94%,
+    94% 96%,
+    98% 98%,
+    100% 100%,
+    82% 100%,
+    0 100%
+  );
+  height: 80%;
+}

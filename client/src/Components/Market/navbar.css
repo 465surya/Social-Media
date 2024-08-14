@@ -1,0 +1,64 @@
+/* navbar.css */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css'); /* Import Font Awesome */
+
+.navbar {
+  position: fixed;
+  left: 0;
+  top: 95px;
+  display: flex;
+  border-radius: 30px;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(-90deg, #000000, rgba(236, 43, 43, 0.769));
+  height: 80%;
+  width: 60px; /* Adjust as needed */
+  padding-top: 80px;
+
+}
+
+.nav-item {
+  color: white;
+  text-decoration: none;
+  margin: 15px 0;
+  text-align: center;
+  transition: color 0.3s ease;
+}
+
+.nav-icon {
+  font-size: 24px;
+  transition: transform 0.3s ease;
+}
+
+.nav-text {
+  display: block;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+/* Active state styling */
+.nav-item.active {
+  color: rgb(0, 0, 0); /* Highlight color */
+}
+
+.nav-item.active .nav-icon {
+  animation: pulse 1.5s infinite; /* Pulsing animation */
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.6;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.nav-item:hover .nav-icon {
+  transform: scale(1.1); /* Slightly enlarge icon on hover */
+}
